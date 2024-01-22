@@ -1,5 +1,5 @@
 from flask import Flask
-import dlib
+import cv2
 app = Flask(__name__)
 
 @app.route('/')

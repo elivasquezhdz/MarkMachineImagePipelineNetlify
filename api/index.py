@@ -72,7 +72,7 @@ def process_image(peturl,PETS_NAME):
         font = ImageFont.truetype("Roboto-Regular.ttf", size=text_size)
         _, _, w, h = draw.textbbox((0, 0), PETS_NAME, font=font)
     draw.text(((fw-w)/2, top_text_x), PETS_NAME, font=font, fill="black")
-    frame.save("export.png", format='PNG')
+    #frame.save("export.png", format='PNG')
     return frame
 
 

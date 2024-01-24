@@ -1,8 +1,9 @@
 import requests
 from io import BytesIO
 from PIL import Image
-secret = open("s.txt").read()
-url = "http://127.0.0.1:5000/secret"
+import os
+secret = os.getenv('key')
+url = "http://127.0.0.1:5000/image"
 headers = {
  'Key': f'{secret}',
 }
